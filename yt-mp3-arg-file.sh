@@ -1,6 +1,6 @@
 #!/bin/sh
 
-youtube-dl.exe \
+youtube-dl \
 	--prefer-ffmpeg \
 	-x \
 	--audio-quality 0 \

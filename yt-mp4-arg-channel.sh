@@ -2,7 +2,7 @@
 # -i youtube-dl will continue on download errors
 # -c, --continue  force resume of partially downloaded files .
 
-youtube-dl.exe \
+youtube-dl \
 	--verbose \
 	--retries '3' \
 	-c \

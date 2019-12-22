@@ -2,11 +2,12 @@
 # -i youtube-dl will continue on download errors
 # -c, --continue  force resume of partially downloaded files .
 
-youtube-dl.exe \
-	-c \
-	-i \
+youtube-dl \
+	--verbose \
+	--download-archive downloaded.txt \
 	--prefer-ffmpeg \
-	-x \
 	--audio-quality 0 \
 	--audio-format mp3 \
-	ytuser:$1
+	-cwix \
+	-o "%(title)s.%(ext)s" \
+	-v $1
