@@ -1,7 +1,7 @@
 #!/bin/sh
 #	--min-filesize 990m \
 
-youtube-dl \
+yt-dlp \
 	-f bestvideo+bestaudio/best \
 	--retries '3' \
 	--prefer-ffmpeg \

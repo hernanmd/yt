@@ -1,6 +1,6 @@
 #!/bin/sh
 
-youtube-dl \
+yt-dlp \
 	--write-auto-sub \
 	--sub-format srt \
 	--sub-lang en \

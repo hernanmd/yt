@@ -1,6 +1,6 @@
 #!/bin/sh
 
-youtube-dl \
+yt-dlp \
 	--prefer-ffmpeg \
 	-x \
 	--audio-quality 0 \
