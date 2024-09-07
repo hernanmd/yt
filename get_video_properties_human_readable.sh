@@ -6,3 +6,5 @@ ffprobe \
 	-show_entries stream=width,height,r_frame_rate,codec_name,bit_rate,pix_fmt,color_space,color_primaries,color_transfer,color_range,field_order,bits_per_raw_sample \
 	$1
 
+# bi mediainfo
+mediainfo $1
