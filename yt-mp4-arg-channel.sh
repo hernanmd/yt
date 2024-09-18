@@ -3,6 +3,8 @@
 # -c, --continue  force resume of partially downloaded files .
 
 yt-dlp \
+	-S res,ext:mp4:m4a \
+	--recode mp4 \
 	--verbose \
 	--retries '3' \
 	-c \
