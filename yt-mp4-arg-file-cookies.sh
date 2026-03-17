@@ -6,7 +6,9 @@ yt-dlp \
 	--recode mp4 \
 	-f bestvideo+bestaudio/best \
 	--retries '3' \
+	--prefer-ffmpeg \
 	--xattrs \
 	--audio-quality 0 \
 	--audio-format mp3 \
+	--cookies-from-browser "firefox:/Users/<your_username>/Library/Application Support/Firefox/Profiles/<cookies-folder>/" \
 	-a $1

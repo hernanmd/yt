@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DIR="${1:-.}"
+
+for file in "$DIR"/*.mp4; do
+	out_file="paded_"$(basename "$file")
+ 	ffmpeg -i "$file" \
+   		-vf "pad=width=1080:height=1920:x=(1080-iw)/2:y=(1920-ih)/2:color=black" \
+    	-c:a copy \
+    	"$out_file"
+done
